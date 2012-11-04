@@ -14,8 +14,8 @@ It will run through an auto install process.
 
 Enjoy!
 
-Leonard Teo
-CEO, Developer
+Leonard Teo  
+CEO, Developer  
 Ballistiq
 
 ## What this will install
@@ -35,8 +35,6 @@ sudo service nginx restart
 
 ### Credits
 
-The base of this came from [Chris Oliver](http://excid3.com/blog/setting-up-ubuntu-12-04-with-ruby-1-9-3-nginx-passenger-and-postgresql-or-mysql/).
-
-The Nginx start/stop init.d script came from [Linode](http://library.linode.com/).
-
-The Nginx ubuntu log rotation config came from [Mell Zamora](http://www.mellzamora.com/installing-nginx-on-ubuntu-and-debian/)
+* The base of this came from [Chris Oliver](http://excid3.com/blog/setting-up-ubuntu-12-04-with-ruby-1-9-3-nginx-passenger-and-postgresql-or-mysql/).
+* The Nginx start/stop init.d script came from [Linode](http://library.linode.com/).
+* The Nginx ubuntu log rotation config came from [Mell Zamora](http://www.mellzamora.com/installing-nginx-on-ubuntu-and-debian/)
