@@ -4,7 +4,7 @@ This has been tested with Ubuntu 12.04 LTS on Amazon EC2.
 
 Once you start up an EC2 instance, log in and run this one command:
 
-    apt-get install -y git && git clone git://gist.github.com/4013787.git gist-4013787 && bash ./gist-4013787/install_ruby_passenger_nginx.sh
+    sudo apt-get install -y git && git clone git://gist.github.com/4013787.git gist-4013787 && bash ./gist-4013787/install_ruby_passenger_nginx.sh
 
 It will run through an auto install process. 
 
