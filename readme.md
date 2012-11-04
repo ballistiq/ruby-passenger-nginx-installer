@@ -16,7 +16,7 @@ Enjoy!
 
 Leonard Teo  
 CEO, Developer  
-Ballistiq
+[Ballistiq](http://www.ballistiq.com)
 
 ## What this will install
 
