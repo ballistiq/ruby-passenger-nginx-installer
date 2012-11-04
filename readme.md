@@ -1,14 +1,22 @@
 # Uber Ruby 1.9.3, Phusion Passenger and Nginx one line installer for Ubuntu 12.04
 
-This script will install the entire web app stack to run Rails apps. This was written for and tested with Ubuntu 12.04 LTS on Amazon EC2. 
+This script will install an Nginx/Passenger/Ruby web stack to run Rails apps. This was written for and tested with Ubuntu 12.04 LTS on Amazon EC2. 
+
+I decided to consolidate everything into a single line as a challenge for myself after having to setup this server environment many times before. This should speed things up. :)
 
 Once you start up an EC2 instance, log in and run this one command:
 
 ```bash
-sudo apt-get install -y git && git clone git://gist.github.com/4013787.git gist-4013787 && bash ./gist-4013787/install_ruby_passenger_nginx.sh
+sudo apt-get install -y git && git clone git@github.com:ballistiq/ruby-passenger-nginx-installer.git && bash ./ruby-passenger-nginx-installer/install.sh
 ```
 
 It will run through an auto install process. 
+
+Enjoy!
+
+Leonard Teo
+CEO, Developer
+Ballistiq
 
 ## What this will install
 
