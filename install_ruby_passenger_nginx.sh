@@ -4,7 +4,7 @@
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # Store the base dir
-BASEDIR=$(dirname $0)
+BASEDIR=$( cd $(dirname $0); pwd)
 
 # Uber script to automatically install Rails and nginx on Ubuntu Linux 12.04
 
@@ -32,7 +32,7 @@ sudo gem install bundler
 
 # Install Passenger - which will install Nginx
 sudo gem install passenger
-sudo passenger-install-nginx-module
+sudo passenger-install-nginx-module --auto --prefix=/opt/nginx --auto-download
 
 # Install the control nginx control script
 sudo cp $BASEDIR/nginx.initd /etc/init.d/nginx
