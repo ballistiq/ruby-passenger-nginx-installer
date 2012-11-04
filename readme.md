@@ -7,7 +7,7 @@ I decided to consolidate everything into a single line as a challenge for myself
 Once you start up an EC2 instance, log in and run this one command:
 
 ```bash
-sudo apt-get install -y git && git clone git@github.com:ballistiq/ruby-passenger-nginx-installer.git && bash ./ruby-passenger-nginx-installer/install.sh
+sudo apt-get install -y git && git clone git://github.com/ballistiq/ruby-passenger-nginx-installer.git && bash ./ruby-passenger-nginx-installer/install.sh
 ```
 
 It will run through an auto install process. 
