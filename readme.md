@@ -2,7 +2,7 @@
 
 This script will install an Nginx/Passenger/Ruby web stack to run Rails apps. This was written for and tested with Ubuntu 12.04 LTS on Amazon EC2. 
 
-I decided to consolidate everything into a single line as a challenge for myself after having to setup this server environment many times before. This should speed things up. :)
+I decided to consolidate everything into a single line as a challenge for myself after having to setup this server environment many times. This should speed things up. :)
 
 Once you start up an EC2 instance, log in and run this one command:
 
