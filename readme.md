@@ -11,7 +11,12 @@ It will run through an auto install process.
 ## What this will install
 
 * Ruby 1.9.3 (p286) from source with bundler
-* Nginx
+* Nginx (including init.d and logrotate tasks)
 * Phusion Passenger
 * ImageMagick (which we use all the time for things like Paperclip)
 
+## Starting/Stopping Nginx
+
+    sudo service nginx start
+    sudo service nginx stop
+    sudo service nginx restart
