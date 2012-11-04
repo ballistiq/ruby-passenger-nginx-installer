@@ -12,6 +12,8 @@ sudo apt-get install -y git && git clone git@github.com:ballistiq/ruby-passenger
 
 It will run through an auto install process. 
 
+Once it is finished, you should have Nginx running and you can start adding your Rails apps.
+
 Enjoy!
 
 Leonard Teo  
