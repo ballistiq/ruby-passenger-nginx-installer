@@ -1,4 +1,4 @@
-# Uber Ruby 1.9.3, Phusion Passenger and Nginx one line installer for Ubuntu 12.04
+# One line installer for Ruby 1.9.3, Phusion Passenger and Nginx on Ubuntu 12.04 LTS
 
 This script will install an Nginx/Passenger/Ruby web stack to run Rails apps. This was written for and tested with Ubuntu 12.04 LTS on Amazon EC2. 
 
