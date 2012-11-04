@@ -24,3 +24,10 @@ sudo service nginx start
 sudo service nginx stop
 sudo service nginx restart
 ```
+
+### Credits
+
+The base of this came from [Chris Oliver](http://excid3.com/blog/setting-up-ubuntu-12-04-with-ruby-1-9-3-nginx-passenger-and-postgresql-or-mysql/).
+
+The Nginx start/stop init.d script came from [Linode](http://library.linode.com/).
+
