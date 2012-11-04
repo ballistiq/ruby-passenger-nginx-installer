@@ -6,8 +6,6 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Store the base dir
 BASEDIR=$( cd $(dirname $0); pwd)
 
-# Uber script to automatically install Rails and nginx on Ubuntu Linux 12.04
-
 # Get all dependencies
 sudo apt-get update
 sudo apt-get -y install build-essential zlib1g-dev libssl-dev libreadline-dev libyaml-dev libcurl4-openssl-dev curl git-core python-software-properties libsqlite3-dev
