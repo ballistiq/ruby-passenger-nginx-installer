@@ -14,14 +14,14 @@ sudo apt-get -y install build-essential zlib1g-dev libssl-dev libreadline-dev li
 # ImageMagick (used by Paperclip gem)
 sudo apt-get -y install zip unzip imagemagick
 # MySQL headers. Required by mysql2 gem
-sudo apt-get -y install libmysql++-dev 
+sudo apt-get -y install libmysql++-dev
 
 # Install Ruby
 mkdir ~/src
 cd ~/src
-wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p286.tar.gz
-tar -zxf ruby-1.9.3-p286.tar.gz
-cd ruby-1.9.3-p286
+wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p429.tar.gz
+tar -zxf ruby-1.9.3-p429.tar.gz
+cd ruby-1.9.3-p429
 ./configure
 make
 sudo make install
