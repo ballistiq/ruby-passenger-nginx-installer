@@ -22,7 +22,7 @@ CEO, Developer
 
 ## What this will install
 
-* Ruby 1.9.3 (p286) from source with bundler
+* Ruby 1.9.3 (p429) from source with bundler
 * Nginx (including init.d and logrotate tasks)
 * Phusion Passenger
 * ImageMagick (which we use all the time for things like Paperclip)
