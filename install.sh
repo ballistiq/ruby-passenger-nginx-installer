@@ -17,20 +17,29 @@ sudo apt-get -y install zip unzip imagemagick
 sudo apt-get -y install libmysql++-dev
 
 # Install Ruby
-mkdir ~/src
-cd ~/src
-wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p429.tar.gz
-tar -zxf ruby-1.9.3-p429.tar.gz
-cd ruby-1.9.3-p429
-./configure
-make
-sudo make install
-echo "gem: --no-ri --no-rdoc" >> ~/.gemrc
-sudo gem install bundler
+
+if ! type ruby > /dev/null; then
+	mkdir ~/src
+	cd ~/src
+	wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p429.tar.gz
+	tar -zxf ruby-1.9.3-p429.tar.gz
+	cd ruby-1.9.3-p429
+	./configure
+	make
+	sudo make install
+	echo "gem: --no-ri --no-rdoc" >> ~/.gemrc
+fi
+
+if ! type bundle > /dev/null; then
+	sudo gem install bundler
+fi
 
 # Install Passenger - which will install Nginx
-sudo gem install passenger
-sudo passenger-install-nginx-module --auto --prefix=/opt/nginx --auto-download
+
+if [ ! -d /opt/nginx ]; then
+	sudo gem install passenger
+	sudo passenger-install-nginx-module --auto --prefix=/opt/nginx --auto-download
+fi
 
 # Install the control nginx control script
 sudo cp $BASEDIR/nginx.initd /etc/init.d/nginx
