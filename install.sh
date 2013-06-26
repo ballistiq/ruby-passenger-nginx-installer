@@ -30,6 +30,9 @@ if ! type ruby > /dev/null; then
 	echo "gem: --no-ri --no-rdoc" >> ~/.gemrc
 fi
 
+# Need this if ruby dev headers are not there
+sudo apt-get -y install ruby-dev
+
 if ! type bundle > /dev/null; then
 	sudo gem install bundler
 fi
