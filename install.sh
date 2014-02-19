@@ -21,9 +21,9 @@ sudo apt-get -y install libmysql++-dev
 if ! type ruby > /dev/null; then
 	mkdir ~/src
 	cd ~/src
-	wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p429.tar.gz
-	tar -zxf ruby-1.9.3-p429.tar.gz
-	cd ruby-1.9.3-p429
+	wget http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.0.tar.gz
+	tar -zxf ruby-2.1.0.tar.gz
+	cd ruby-2.1.0
 	./configure
 	make
 	sudo make install
@@ -38,7 +38,6 @@ if ! type bundle > /dev/null; then
 fi
 
 # Install Passenger - which will install Nginx
-
 if [ ! -d /opt/nginx ]; then
 	sudo gem install passenger
 	sudo passenger-install-nginx-module --auto --prefix=/opt/nginx --auto-download
